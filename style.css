@@ -1,0 +1,467 @@
+/*Basic info*/
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Larsseit', sans-serif;
+}
+
+section{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+/*Section left*/
+section.left{
+	width: 58%;
+	background-color: #F6F6F6;
+}
+
+section.left img.logo{
+	position: absolute;
+	top: 6%;
+	left: 3%;
+	width: 85px;
+	opacity: 0.4;
+	transition: opacity 0.3s;
+	z-index: 1;
+}
+
+section.left img.logo:hover{
+	opacity: 0.8;
+}
+
+section.left video{
+	width: 75%;
+	display: block;
+	margin: 0 auto;
+}
+
+/*Section right*/
+section.right{
+	float: right;
+	width: calc(42% - 80px);
+	background-color: white;
+	padding: 40px;
+}
+
+section.right div.messages{
+	margin-top: 160px;
+}
+
+section.right img.message{
+	display: block;
+	width: 300px;
+}
+
+section.right p.description{
+	width: 75%;
+	font-size: 18px;
+	line-height: 28px;
+	color: #696969;
+	padding-top: 40px;
+}
+
+section.right p.access-text{
+	font-size: 14px;
+	font-weight: 600;
+	color: #cecece;
+}
+
+section.right form.access-form{
+	border: 2px solid #eaeaea;
+	border-radius: 15px;
+	box-shadow: 0px 7px 20px -5px rgba(0, 0, 0, 0.2);
+	height: 80px;
+	margin: 50px 0 70px;
+	transition: margin 0.3s, box-shadow 0.3s;
+}
+
+section.right form.access-form:hover{
+	margin: 45px 0 75px;
+	box-shadow: -5px 15px 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+section.right input.phone{
+	width: calc(50% - 20px);
+	height: 100%;
+	border: none;
+	border-radius: 15px 0 0 15px;
+	font-size: 15px;
+}
+
+section.right input.phone, select{
+	padding-left: 20px;
+}
+
+section.right input.phone::placeholder{
+	color: #a3a3a3;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+section.right input.phone:focus{
+	outline: none;
+}
+
+section.right button.submit-button{
+	width: 50%;
+	height: 100%;
+	border: none;
+	border-radius: 0 15px 15px 0;
+	float: right;
+	background-color: #5C3EDD;
+}
+
+section.right button.submit-button:focus{
+	outline: none;
+}
+
+section.right p.submit-text{
+	font-size: 14px;
+	font-weight: 600;
+	color: white;
+	letter-spacing: 2px;
+	display: inline-block;
+}
+
+section.right img.submit-img{
+	display: inline-block;
+	width: 30px;
+	margin: 0 0 -15px 5px;
+}
+
+section.right p.share-text{
+	color: #999;
+	font-size: 10px;
+	letter-spacing: 1px;
+	width: fit-content;
+	margin: 0 auto;
+	border-bottom: 1px solid #999;
+	padding-bottom: 3px;
+}
+
+section.right p.share-text:hover{
+	cursor: pointer;
+}
+
+section.right div.follow{
+	position: absolute;
+	top: 35px;
+	right: 40px;
+}
+
+section.right h6.follow-text{
+	color: #999;
+	font-size: 11px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	right: 130px;
+	width: 110px;
+}
+
+section.right a.follow-link{
+	display: inline-block;
+}
+
+section.right img.follow-img{
+	width: 30px;
+	height: 30px;
+	margin: 0 7px;
+	filter: grayscale(100%) opacity(30%);
+}
+
+section.right img.follow-img:hover{
+	filter: grayscale(0) opacity(100%);
+}
+
+/*Copyrights*/
+div.copyright{
+	position: fixed;
+	bottom: 40px;
+	left: 40px;
+}
+
+div.copyright p.first-line{
+	font-size: 10px;
+	font-weight: 100;
+	color: #505050;
+	margin: 0 0 3px;
+}
+
+div.copyright p.second-line{
+	font-size: 9px;
+	font-weight: 100;
+	color: #999;
+	margin: 0;
+}
+
+/*Share window*/
+div.share-screen{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(10, 10, 10, 0.45);
+	display: none;
+}
+
+div.share-window{
+	position: fixed;
+	top: 10%;
+	left: 28%;
+	border: 1px solid #66aaff;
+	background-color: white;
+	min-width: 44%;
+	min-height: 60%;
+}
+
+div.share-window p.x-button{
+	text-align: right;
+	color: #bebebe;
+	font-size: 30px;
+	margin: 15px 20px 0 0;
+}
+
+div.share-window p.x-button:hover{
+	cursor: default;
+}
+
+div.share-window p.header{
+	text-align: center;
+	color: #505050;
+	font-size: 30px;
+	margin: 0;
+}
+
+div.share-window div.description{
+	text-align: center;
+	margin: 20px 0 30px;
+}
+
+div.share-window p.description{
+	display: inline-block;
+	color: dimgray;
+	font-size: 15px;
+}
+
+div.share-window img.emoji-description{
+	width: 30px;
+	margin-bottom: -10px;
+}
+
+div.share-window div.share-buttons{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+div.share-window div.facebook-button{
+	background-color: #37599b;
+}
+
+div.share-window a.share-link{
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+}
+
+div.share-window div.share-button{
+	border-radius: 30px;
+	width: 25%;
+	padding: 15px 0;
+	display: inline-block;
+}
+
+div.share-window div.twitter-button{
+	background-color: #00a3f6;
+	margin: 0 5%;
+}
+
+div.share-window div.email-button{
+	background-color: #6d63ff;
+}
+
+div.share-window p.last-p{
+	text-align: center;
+	font-size: 12px;
+	color: dimgray;
+	line-height: 17px;
+}
+
+div.share-window a.mail-adrress{
+	color: dimgray;
+}
+
+div.share-window a.mail-adrress:hover{
+	text-decoration: none;
+}
+
+/*Laptop*/
+@media screen and (max-width: 1074px){
+	/*Bigger the width of the p description*/
+	section.right p.description{
+		width: 100%;
+	}
+
+	/*Bigger share window and different border color*/
+	div.share-window{
+		top: 2%;
+		left: 22%;
+		min-width: 56%;
+		min-height: 95%;
+		border-color: #dd8855;
+	}
+}
+
+/*Just laptop and small phone*/
+@media screen and (max-width: 1074px) and (min-width: 1024px), screen and (max-width: 303px){
+	/*Section right, the emoji on the button*/
+	section.right img.submit-img{
+		display: block;
+		margin: -13px auto 0;
+	}
+}
+
+/*Tablet*/
+@media screen and (max-width: 1023px){
+	/*Width and padding section is different*/
+	section.left{
+		width: 42%;
+	}
+
+	section.right{
+		width: calc(58% - 40px);
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	/*Hope logo move up and left*/
+	section.left img.logo{
+		top: 4%;
+		left: 2%;
+	}
+
+	/*Follow links move up and left*/
+	section.right div.follow{
+		top: 20px;
+		right: 30px;
+	}
+
+	/*Change the images, the margins and the texts in section right*/
+	section.right div.messages{
+		margin-top: 140px;
+	}
+
+	section.right img.message{
+		width: 200px;
+	}
+
+	section.right p.description{
+		width: 95%;
+		font-size: 13px;
+		line-height: 24px;
+		margin-bottom: 35px;
+		padding-top: 10px;
+	}
+
+	section.right p.access-text{
+		font-size: 11px;
+	}
+
+	section.right form.access-form{
+		height: 65px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	section.right input.phone{
+		width: calc(60% - 20px);
+	}
+
+	section.right button.submit-button{
+		width: 40%;
+	}
+
+	/*The copyrights section move down and be not fixed*/
+	div.copyright{
+		position: static;
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		margin: 30px 0 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+/*Phone*/
+@media screen and (max-width: 639px){
+	/*Section left is none*/
+	section.left{
+		display: none;
+	}
+
+	/*The width of right section is 100%*/
+	section.right{
+		width: 100%;
+		padding: 0;
+	}
+	
+	/*The bgc of some divs is different, Change the size of texts and divs*/
+	section.right div.messages{
+		margin-left: 20px;
+	}
+
+	section.right img.message{
+		width: 180px;
+	}
+
+	section.right div.second-right-div{
+		width: calc(100% - 40px);
+		background-color: #eee;
+		padding: 0 20px 30px;
+	}
+
+	section.right p.description{
+		font-size: 14px;
+		line-height: 20px;
+		padding-top: 50px;
+	}
+
+	section.right form.access-form{
+		height: 55px;
+	}
+
+	/*The follow section is static and 100% of width*/
+	section.right div.follow{
+		position: static;
+		width: 100%;
+		margin: 60px auto 30px;
+		text-align: center;
+	}
+
+	section.right h6.follow-text{
+		position: static;
+		margin: 0 auto 5px;
+	}
+
+	section.right img.follow-img{
+		filter: grayscale(0) opacity(100%);
+	}
+
+	/*The share window is full screen*/
+	div.share-window{
+		width: calc(100% - 2px);
+		height: calc(100% - 2px);
+		top: 0;
+		left: 0;
+		border-color: #fc7;
+	}
+}

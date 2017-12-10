@@ -1,0 +1,57 @@
+doctype html
+html
+	head
+		title Meet Hope. Your assistant for the resistance.
+		link(rel="stylesheet" href="style-dist.css" text="text/css")
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js")
+		script(src="app.js")
+		meta(name="viewport" content="width=device-width")
+	body
+		section.left
+			img.logo(src="img/logo.png")
+			video(autoplay loop)
+				source(src="https://s3.amazonaws.com/meethope/video/hp-phone-video.ogv" type="video/ogg")
+				source(src="https://s3.amazonaws.com/meethope/video/hp-phone-video.mp4" type="video/mp4")
+		section.right
+			div.messages
+				img.message(src="img/first-message.png")
+				img.message(src="img/second-message.png")
+			div.second-right-div
+				p.description Hope explains the headlines and tells you the smartest actions you can take to actually make a difference. She's your own personal political advisor.
+				p.access-text Request access now:
+				form.access-form
+					input.phone(type="text" placeholder="Your phone #...")
+					button.submit-button(type="submit")
+						p.submit-text GET ACCESS
+						img.submit-img(src="img/submit-emoji.png")
+				p.share-text SHARE WITH FRIENDS
+			div.follow
+				h6.follow-text FOLLOW HOPE:
+				a.follow-link(href="https://www.facebook.com/talktohope")
+					img.follow-img(src="img/facebook-icon.png")
+				a.follow-link(href="https://www.twitter.com/talktohope")
+					img.follow-img(src="img/twitter-icon.png")
+				a.follow-link(href="https://www.instagram.com/talktohope")
+					img.follow-img(src="img/instagram-icon.png")
+		div.copyright
+			p.first-line Copyright © 2017 Purpose PBC.
+			p.second-line *Msg &amp; Data Rates May Apply. Reply STOP to opt out.
+		div.share-screen
+			div.share-window
+				p.x-button x
+				p.header Give Hope to the world.
+				div.description
+					p.description Share Hope with your friends and with the world
+					img.emoji-description(src="img/description-emoji.png")
+				div.share-buttons
+					a.share-link(href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmeethope.us")
+						div.share-button.facebook-button Share on Facebook
+					a.share-link(href="https://twitter.com/home?status=Meet%20Hope%E2%80%94your%20personal%20political%20advisor%3A%20https%3A//meethope.us")
+						div.share-button.twitter-button Share on Twitter
+					a.share-link(href="mailto:email@address.com?subject=You%20would%20love%20this.&body=I%20just%20signed%20up%20for%20Hope%2C%20the%20assistant%20for%20the%20resistance.%20%0A%0AIt%E2%80%99s%20the%20tool%20that%20will%20help%20you%20keep%20track%20of%20the%20news%2C%20and%20let%20you%20know%20what%20you%20can%20do%20to%20have%20an%20impact.%20%0A%0ASign%20up%20here%3A%20https%3A%2F%2Fmeethope.us")
+						div.share-button.email-button Share via email
+				p.last-p 
+					| PS. If building the chatbot experience for the progressive movement excites you, let's talk!
+					br
+					| Connect with us at 
+					a.mail-adrress(href="mailto:hello@meethope.us") hello@meethope.us
