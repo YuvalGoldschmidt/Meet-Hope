@@ -15,6 +15,7 @@ section{
 /*Section left*/
 section.left{
 	width: 58%;
+	position: fixed;
 	background-color: #F6F6F6;
 }
 
