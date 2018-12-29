@@ -417,6 +417,7 @@ div.share-window a.mail-adrress:hover{
 	
 	/*The bgc of some divs is different, Change the size of texts and divs*/
 	section.right div.messages{
+		margin-top: 50px;
 		margin-left: 20px;
 	}
 
